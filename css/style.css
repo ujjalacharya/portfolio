@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #slides .overlay {
   background: rgba(0, 0, 0, 0.4);
   position: absolute;
@@ -9,7 +17,6 @@
 .arrow-right,
 .arrow-left {
   position: absolute;
-  top: 50%;
   z-index: 4;
   font-size: 2rem;
   color: #fff;
@@ -18,4 +25,26 @@
 
 .arrow-right {
   right: 2%;
+}
+
+.intro .main,
+.sub {
+  position: absolute;
+  z-index: 3;
+  color: #fff;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.main {
+  top: 30%;
+  font-size: 3rem;
+  font-family: 'Fredoka One', cursive;
+}
+
+.sub {
+  top: 45%;
+  font-size: 1.8rem;
 }
