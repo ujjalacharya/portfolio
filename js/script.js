@@ -1,7 +1,6 @@
 window.addEventListener("load", () => {
-
   let loader = document.getElementById("loader");
-  loader.classList.add("hidden")
+  loader.classList.add("hidden");
 
   $("#slides").superslides({
     animation: "fade",
@@ -17,17 +16,27 @@ window.addEventListener("load", () => {
     showCursor: true,
     startDelay: 1000
   });
+});
 
-  var element = document.querySelectorAll('.chart');
-  console.log(element)
-  element.forEach((el, i) => {
-    new EasyPieChart(element[i], {
-      easing: 'easeInOut',
-      barColor: '#fff',
-      trackColor: false,
-      scaleColor: false,
-      lineWidth: 4,
-      size: 90
-  });
-  })
+window.addEventListener("scroll", () => {
+  let posY;
+  posY = window.scrollY;
+  let className = document.getElementById("test").className;
+  let checkClass = className.split(" ").pop();
+  if (posY > 670) {
+    if (checkClass === "check") {
+      var element = document.querySelectorAll(".chart");
+      element.forEach(el => {
+        new EasyPieChart(el, {
+          easing: "easeInOut",
+          barColor: "#fff",
+          trackColor: false,
+          scaleColor: false,
+          lineWidth: 4,
+          size: 150
+        });
+      });
+      document.getElementById("test").classList.remove("check");
+    }
+  }
 });
