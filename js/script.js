@@ -17,4 +17,17 @@ window.addEventListener("load", () => {
     showCursor: true,
     startDelay: 1000
   });
+
+  var element = document.querySelectorAll('.chart');
+  console.log(element)
+  element.forEach((el, i) => {
+    new EasyPieChart(element[i], {
+      easing: 'easeInOut',
+      barColor: '#fff',
+      trackColor: false,
+      scaleColor: false,
+      lineWidth: 4,
+      size: 90
+  });
+  })
 });

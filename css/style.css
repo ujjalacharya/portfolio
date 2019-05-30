@@ -6,11 +6,20 @@
   box-sizing: border-box;
 }
 
+body {
+  letter-spacing: 1px;
+}
+
 /* Utility */
 .hidden {
   opacity: 0;
   transition: visibility 0s 2s, opacity 2s linear;
   display: none;
+}
+
+.bg-primarycolor {
+  background: #e74c3c;
+  color: #fff;
 }
 
 .loader .inner {
@@ -96,10 +105,20 @@ nav.navbar .nav-link {
 }
 
 /* About */
-#about{
-  padding: 2rem;
+#about,
+#skills {
+  padding: 3rem;
 }
 
-#about .about-image{
+#about .about-image {
   width: 70%;
+}
+
+/* Skills */
+.skill-percent {
+  position: absolute;
+  color: #000;
+  top: 25%;
+  left: 40%;
+  font-weight: bold;
 }
