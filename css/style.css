@@ -109,7 +109,8 @@ nav.navbar .nav-link {
 
 /* About */
 #about,
-#skills {
+#skills,
+#stats {
   padding: 3rem;
 }
 
@@ -124,4 +125,50 @@ nav.navbar .nav-link {
   top: 31%;
   left: 42%;
   font-weight: bold;
+}
+
+/* Stats */
+#stats .stat {
+  padding: 2rem 0rem;
+  text-align: center;
+  border: 2px solid #444;
+  margin: 4rem 0rem;
+  width: 65%;
+  border-top: none;
+  position: relative;
+}
+
+.stat::before,
+.stat::after {
+  content: "";
+  position: absolute;
+
+  border: 1.3px solid #444;
+  width: 40px;
+}
+
+.stat::before {
+  top: 0;
+  left: 0;
+}
+
+.stat::after {
+  top: 0;
+  right: 0;
+}
+
+.stat i {
+  position: absolute;
+  top: -21px;
+  font-size: 2.5rem;
+  left: 38%;
+}
+
+.stat .fa-mobile-alt{
+  left: 43%;
+}
+
+.stat h4{
+  color: #e74c3c;
+  font-size: 3rem;
 }
