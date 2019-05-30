@@ -1,4 +1,8 @@
 window.addEventListener("load", () => {
+
+  let loader = document.getElementById("loader");
+  loader.classList.add("hidden")
+
   $("#slides").superslides({
     animation: "fade",
     play: 5000,
