@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One&display=swap");
 
 * {
   margin: 0;
@@ -41,10 +41,27 @@
 .main {
   top: 30%;
   font-size: 3rem;
-  font-family: 'Fredoka One', cursive;
+  font-family: "Fredoka One", cursive;
 }
 
 .sub {
   top: 45%;
   font-size: 1.8rem;
+}
+
+/* Navbar */
+nav.navbar {
+  background-color: #e74c3c;
+  padding: 0.8rem;
+}
+
+nav a {
+  color: #fff;
+}
+nav a:hover {
+  color: #fff;
+}
+nav.navbar .nav-link {
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
 }

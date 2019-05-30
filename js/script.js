@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
 
   var typed = new Typed(".typed", {
     // Waits 1000ms after typing "First"
-    strings: ["Software Engineer", "Web Developer", "Student"],
+    strings: ["Software Engineer.", "Web Developer.", "Student."],
     typeSpeed: 70,
     loop: true,
     showCursor: true,
