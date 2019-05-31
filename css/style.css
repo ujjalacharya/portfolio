@@ -110,7 +110,8 @@ nav.navbar .nav-link {
 /* About */
 #about,
 #skills,
-#stats {
+#stats,
+#contact {
   padding: 3rem;
 }
 
@@ -164,11 +165,26 @@ nav.navbar .nav-link {
   left: 38%;
 }
 
-.stat .fa-mobile-alt{
+.stat .fa-mobile-alt {
   left: 43%;
 }
 
-.stat h4{
+.stat h4 {
   color: #e74c3c;
   font-size: 3rem;
+}
+
+/* Contact */
+#contact button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #e74c3c;
+  color: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+#contact button:hover{
+  background-color: #fff;
+  color: #e74c3c;
 }
