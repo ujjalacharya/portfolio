@@ -111,7 +111,8 @@ nav.navbar .nav-link {
 #about,
 #skills,
 #stats,
-#contact {
+#contact,
+#portfolio {
   padding: 3rem;
 }
 
@@ -184,7 +185,28 @@ nav.navbar .nav-link {
   cursor: pointer;
 }
 
-#contact button:hover{
+#contact button:hover {
   background-color: #fff;
   color: #e74c3c;
+}
+
+#portfolio .filters ul {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin: auto;
+  list-style: none;
+}
+
+#portfolio .filters a {
+  color: #bdc3c7;
+  border: 1px solid #bdc3c7;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+#portfolio .filters .current{
+  background: #e74c3c;
+  color: #fff;
 }
