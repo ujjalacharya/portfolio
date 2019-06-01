@@ -26,6 +26,8 @@ window.addEventListener("load", () => {
       columnWidth: 200
     }
   });
+
+  $('[data-fancybox]').fancybox();
 });
 
 window.addEventListener("scroll", () => {

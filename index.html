@@ -3,7 +3,7 @@
   <head>
     <title>UJJAL ACHARYA- FULL STACK PROGRAMMER</title>
 
-    <link rel="shortcut icon" href="/img/ua.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/ua.jpg" type="image/x-icon" />
 
     <link
       rel="stylesheet"
@@ -19,6 +19,11 @@
       href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
       integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
       crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
     />
 
     <link rel="stylesheet" href="./css/style.css" />
@@ -222,13 +227,43 @@
             <h4>PORTFOLIO</h4>
             <div class="filters mt-4">
               <ul class="filter">
-                <li><a href="#" data-filter="*" class="current">All</a></li>
+                <li><a href="#" data-filter="*" class="current">ALL</a></li>
                 <li><a href="#" data-filter=".node">Node</a></li>
                 <li><a href="#" data-filter=".react">React</a></li>
                 <li><a href="#" data-filter=".mern">MERN</a></li>
-                <li><a href="#" data-filter=".react-native">React Native</a></li>
+                <li>
+                  <a href="#" data-filter=".react-native">React Native</a>
+                </li>
               </ul>
             </div>
+          </div>
+
+          <div class="projectItems">
+            <ul class="items">
+              <li class="apps col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="item">
+                  <img
+                    src="./img/portfolio/thumbnails/social-net.JPG"
+                    alt=""
+                  />
+
+                  <div class="icons">
+                    <a
+                      data-fancybox
+                      data-caption="Nepsanjaal- Social Network App"
+                      href="./img/portfolio/dog.jpeg"
+                      title="Nepsanjaal- Social Network App"
+                      class="openButton"
+                    >
+                      <i class="fa fa-eye"></i>
+                    </a>
+                    <a href="" target="_blank" class="openLink">
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -236,6 +271,7 @@
 
     <script src="./js/jquery.superslides.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
