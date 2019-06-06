@@ -222,6 +222,10 @@ nav.navbar .nav-link {
   position: inherit!important;
 }
 
+#portfolio .projectItems ul{
+  position: initial!important;
+}
+
 #portfolio .projectItems .items .item {
   width: 16.1rem;
   height: 100%;
