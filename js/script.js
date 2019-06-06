@@ -17,17 +17,24 @@ window.addEventListener("load", () => {
     startDelay: 1000
   });
 
-  // vanilla JS
-  var grid = document.querySelector(".grid");
-  var iso = new Isotope(grid, {
-    // options...
-    itemSelector: ".grid-item",
-    masonry: {
-      columnWidth: 200
-    }
+  $("#filters a").click(function() {
+    $("#filters .current").removeClass("current");
+    $(this).addClass("current");
+
+    var selector = $(this).attr("data-filter");
+
+    $(".items").isotope({
+      filter: selector,
+      animationOptions: {
+        duration: 1500,
+        easing: "linear",
+        queue: false
+      }
+    });
+    return false;
   });
 
-  $('[data-fancybox]').fancybox();
+  $("[data-fancybox]").fancybox();
 });
 
 window.addEventListener("scroll", () => {
