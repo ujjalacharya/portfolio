@@ -211,6 +211,10 @@ nav.navbar .nav-link {
   color: #fff;
 }
 
+#portfolio .projectItems{
+  overflow: hidden;
+}
+
 #portfolio .projectItems .items{
   display: flex;
   flex-wrap: wrap;
@@ -224,6 +228,7 @@ nav.navbar .nav-link {
 
 #portfolio .projectItems ul{
   position: initial!important;
+  overflow: hidden;
 }
 
 #portfolio .projectItems .items .item {
