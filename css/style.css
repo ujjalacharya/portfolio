@@ -211,23 +211,36 @@ nav.navbar .nav-link {
   color: #fff;
 }
 
-#portfolio .projectItems{
+#portfolio .projectItems {
   overflow: hidden;
 }
 
-#portfolio .projectItems .items{
+#portfolio .projectItems .item:hover {
+  transform: scale(1.05, 1.05);
+  transition: 500ms;
+}
+
+#portfolio .projectItems .item img {
+  height: 16rem;
+}
+
+#portfolio .projectItems .items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   list-style: none;
 }
 
-#portfolio .projectItems .all, .mern, .node, .react, .react-native{
-  position: inherit!important;
+#portfolio .projectItems .all,
+.mern,
+.node,
+.react,
+.react-native {
+  position: inherit !important;
 }
 
-#portfolio .projectItems ul{
-  position: initial!important;
+#portfolio .projectItems ul {
+  position: initial !important;
   overflow: hidden;
 }
 
@@ -267,5 +280,5 @@ nav.navbar .nav-link {
   display: flex;
   top: 40%;
   left: 27%;
-  transition: all 0.2s linear, 1s; 
+  transition: all 0.2s linear, 1s;
 }
