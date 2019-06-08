@@ -282,3 +282,23 @@ nav.navbar .nav-link {
   left: 27%;
   transition: all 0.2s linear, 1s;
 }
+
+/* Copyright */
+
+#copyright{
+  width: 99%;
+}
+
+#copyright .name{
+  background-color: #444;
+  padding: 1.5rem;
+  color: #fff;
+}
+
+#copyright a{
+  color: #fff;
+}
+
+#copyright i{
+  font-size: 2rem;
+}
