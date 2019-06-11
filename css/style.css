@@ -123,6 +123,8 @@ nav.navbar .nav-link {
 
 #about .about-image {
   width: 70%;
+  box-shadow: 4px 5px 12px #000000;
+  border-radius: 32%;
 }
 
 /* Skills */
