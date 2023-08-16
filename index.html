@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" webcrx="">
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>UJJAL ACHARYA- FULL STACK PROGRAMMER</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta property="og:url" content={`https://ujjalacharya.com.np`} />
@@ -12,566 +14,59 @@
     <meta property="og:image" content={`https://ujjalacharya.com.np/img/ujjal.jpg`} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="1200" />
+    <title>Ujjal Acharya</title>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108240629-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-108240629-2');
-    </script>
-
-    
-    <link rel="shortcut icon" href="/img/ua.jpg" type="image/x-icon" />
-
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-
-    <link rel="stylesheet" href="./css/superslides.css" />
-
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-      crossorigin="anonymous"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
-    />
-
-    <link rel="stylesheet" href="./css/style.css" />
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+      :root{--primary-black:#000;--primary-white:#fff;--primary-green:#00f549;--primary-error:#db0000;--secondary-black:#181818;--secondary-green:#00ff4c;--primary-font:IBM Plex Mono,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif}body,html{padding:0;margin:0;font-family:var(--primary-font);background-color:var(--primary-black);color:var(--primary-white);overflow-x:hidden}::-webkit-scrollbar{width:0}::-moz-selection{color:var(--primary-black);background:var(--primary-white)}::selection{color:var(--primary-black);background:var(--primary-white)}*{box-sizing:border-box;margin:0;padding:0}a{color:inherit;text-decoration:none}a.active,a:hover{color:var(--secondary-green)}ul{list-style:none}main{min-width:100vw;padding-right:80px}.container,main{min-height:100vh}.container{display:flex;flex-direction:column;justify-content:center;max-width:1000px;margin-inline:auto;padding-inline:60px;padding-top:60px}@media screen and (max-width:768px){main{padding-right:60px}.container{padding-inline:20px}}.code{font-size:1.75rem;margin-block:1.5rem;color:var(--primary-green)}.code-section p{line-height:1.6rem}.code-section>:not(.code){padding-left:32px}.nav-pad{width:calc(100% - 80px);padding-left:40px}@media screen and (max-width:768px){.nav-pad{width:calc(100% - 60px);padding-left:30px}.code-section>:not(.code){padding-left:16px}.code{font-size:1.5rem;margin-block:1rem}}.font-5{font-size:4rem}.font-4{font-size:2.5rem}.font-3{font-size:3rem}.font-2{font-size:2.5rem}.font-1{font-size:2rem}.font-0{font-size:1.5rem}
+    </style>
+    <style
+      data-href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&amp;display=swap"
+    >
+      @font-face {
+        font-family: "IBM Plex Mono";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/ibmplexmono/v12/-F63fjptAgt5VM-kVkqdyU8n5is.woff)
+          format("woff");
+      }
+    </style>
   </head>
   <body>
-    <div class="loader" id="loader">
-      <div class="inner"></div>
-    </div>
-
-    <section id="slides">
-      <div class="overlay"></div>
-      <div class="slides-container">
-        <img src="./img/slider1.jpg" alt="" />
-        <img src="./img/slider2.jpg" alt="" />
-        <img src="./img/slider3.jpg" alt="" />
-        <img src="./img/slider4.jpg" alt="" />
-      </div>
-      <div class="intro">
-        <div id="typed-strings">
-          <p class="main">UJJAL ACHARYA</p>
-          <p class="sub typed"></p>
-        </div>
-      </div>
-      <div class="scroll">
-        <img
-          class="scroll-image"
-          src="./img/scroll.gif"
-          alt="scroll"
-          onclick="(() =>window.location.hash = 'about')()"
-        />
-      </div>
-      <nav class="slides-navigation">
-        <a href="#" class="prev"
-          ><i class="fas fa-chevron-left arrow-left"></i
-        ></a>
-        <a href="#" class="next"
-          ><i class="fas fa-chevron-right arrow-right"></i
-        ></a>
-      </nav>
-    </section>
-
-    <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand" href="#">Ujjal Acharya</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+    <div id="__next" data-ol-has-click-handler="">
+      <div
+        style="display: block"
+        class="MainLayout__MainContainer-sc-iw5vn9-0 effSam"
       >
-        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#about"
-              >About <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#stats">Stats</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" target="_blank" href="./resume.pdf">Resumé</a>
-            </li>
-          <li class="nav-item">
-              <a class="nav-link" target="_blank" href="https://personalblogs.netlify.com/blog">Blog</a>
-            </li>
-        </ul>
-      </div>
-    </nav>
-
-    <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5">
-            <img
-              loading="lazy"
-              class="about-image"
-              src="./img/ujjal.jpg"
-              alt="ujjal"
-            />
-          </div>
-          <div class="col-md-7">
-            <h4>Howdy, I'm Ujjal Acharya</h4>
-            <p>
-              Ujjal Acharya is a final-year student pursuing BscCSIT at Madan Bhandari
-              Memorial College, Bijulibajar-Kathmandu.
-            </p>
-            <p>
-              He is a tech enthusiast who is passionate about programming and
-              machines. He's a green thinker, science lover, aesthetic voyager,
-              problems, puzzles admirer. He is very interested in the
-              intersection of media, entertainment, and technology and is
-              focused on building software that creates immersive experiences
-              for people.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="skills bg-primarycolor" id="skills">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center mb-3">
-            <h4>TECHNICAL SKILLS</h4>
-            <p>A representation of my proficiency in each level</p>
-          </div>
-        </div>
-        <div class="row check" id="test">
-          <div class="col-md-2 text-center">
-            <span class="chart" data-percent="80">
-              <span class="skill-percent">80%</span>
-            </span>
-            <p>HTML/CSS</p>
-          </div>
-          <div class="col-md-2 text-center">
-            <span class="chart" data-percent="75">
-              <span class="skill-percent">75%</span>
-            </span>
-            <p>Vanilla JS</p>
-          </div>
-          <div class="col-md-2 text-center">
-            <span class="chart" data-percent="95">
-              <span class="skill-percent">95%</span>
-            </span>
-            <p>Node</p>
-          </div>
-          <div class="col-md-2 text-center">
-            <span class="chart" data-percent="85">
-              <span class="skill-percent">85%</span>
-            </span>
-            <p>React</p>
-          </div>
-          <div class="col-md-2 text-center">
-            <span class="chart" data-percent="80">
-              <span class="skill-percent">80%</span>
-            </span>
-            <p>MongoDB</p>
-          </div>
-          <div class="col-md-2 text-center">
-            <span class="chart" data-percent="75">
-              <span class="skill-percent">75%</span>
-            </span>
-            <p>ReactNative</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="stats">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="stat">
-              <i class="far fa-clock"></i>
-              <h4>1+</h4>
-              <p>Years Experience</p>
+        <main class="pages__Main-sc-biatdk-0 jwjphS">
+          <div class="container">
+            <h2 class="font-1">
+              <span
+                ><span>Hello World!</span
+                ><span class="typed-cursor">|</span></span
+              >
+            </h2>
+            <div class="code-section">
+              <h3 class="code">&lt;home&gt;</h3>
+              <div>
+                <h1 class="font-4">I'm Ujjal Acharya.</h1>
+                <img
+                  style="height: 300px; margin: 1rem; border-radius: 10rem"
+                  src="./img/uzz.jpeg"
+                />
+                <p>
+                  I'm a <span>Full Stack Software Engineer</span> who works in
+                  React, Nodejs, TypeScript, SQL, NoSQL, React Native, Graphql, Nextjs.
+                  I've been working in the industry for more than 5 years and
+                  currently doing my masters in Global Software Development in
+                  Fulda University of Applied Sciences in Germany.
+                </p>
+              </div>
+              <h3 class="code">&lt;/home&gt;</h3>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="stat">
-              <i class="fas fa-cloud"></i>
-              <h4>8+</h4>
-              <p>Webapps</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="stat">
-              <i class="fas fa-mobile-alt"></i>
-              <h4>3</h4>
-              <p>Mobile Apps</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="stat">
-              <i class="fas fa-cogs"></i>
-              <h4>5+</h4>
-              <p>API</p>
-            </div>
-          </div>
-        </div>
+        </main>
       </div>
-    </section>
-
-    <section id="contact" class="bg-primarycolor">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <p>Want to reach out to me?</p>
-            <h2>I'd love to hear from you</h2>
-            <a href="mailTo:acharyaujjal1@gmail.com"
-              ><button>Get in touch</button></a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h4>Public Projects</h4>
-            <div class="filters mt-4" id="filters">
-              <ul class="filter">
-                <li><a href="#" data-filter="*" class="current">ALL</a></li>
-                <li><a href="#" data-filter=".node">Node</a></li>
-                <li><a href="#" data-filter=".react">React</a></li>
-                <li><a href="#" data-filter=".mern">MERN</a></li>
-                <li>
-                  <a href="#" data-filter=".react-native">R.Native</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="projectItems">
-            <ul class="items">
-              <li class="mern col-lg-3 col-md-3 col-sm-4 col-xs-6 mt-5">
-                <div class="item">
-                  <img
-                    loading="lazy"
-                    src="./img/portfolio/thumbnails/social-net.JPG"
-                    alt=""
-                  />
-
-                  <div class="icons">
-                    <a
-                      data-fancybox
-                      data-caption="Nepsanjaal- Social Network App"
-                      href="./img/portfolio/nepsanjaal.JPG"
-                      title="Nepsanjaal- Social Network App"
-                      class="openButton"
-                    >
-                      <i class="fa fa-eye"></i>
-                    </a>
-                    <a
-                      href="https://nepsanjaal.herokuapp.com"
-                      target="_blank"
-                      class="openLink"
-                    >
-                      <i class="fa fa-link"></i>
-                    </a>
-                  </div>
-
-                  <div class="overlay"></div>
-                </div>
-              </li>
-              <li class="mern col-lg-3 col-md-3 col-sm-4 col-xs-6 mt-5">
-                <div class="item">
-                  <img
-                    loading="lazy"
-                    src="./img/portfolio/thumbnails/ecommerce2.gif"
-                    alt=""
-                  />
-
-                  <div class="icons">
-                    <a
-                      data-fancybox
-                      data-caption="NepalEPlaza- App for finding products at reasonable price"
-                      href="./img/portfolio/nepaleplaza.png"
-                      title="NepalEPlaza- App for finding products at reasonable price"
-                      class="openButton"
-                    >
-                      <i class="fa fa-eye"></i>
-                    </a>
-                    <a
-                      href="https://nepaleplaza.herokuapp.com"
-                      target="_blank"
-                      class="openLink"
-                    >
-                      <i class="fa fa-link"></i>
-                    </a>
-                  </div>
-
-                  <div class="overlay"></div>
-                </div>
-              </li>
-              <li class="mern col-lg-3 col-md-3 col-sm-4 col-xs-6 mt-5">
-                <div class="item">
-                  <img
-                    loading="lazy"
-                    src="./img/portfolio/thumbnails/homestay.jpg"
-                    alt=""
-                  />
-
-                  <div class="icons">
-                    <a
-                      data-fancybox
-                      data-caption="Nepstay- App for finding a place to stay on holiday"
-                      href="./img/portfolio/nepstay.JPG"
-                      title="Nepstay- App for finding a place to stay on holiday"
-                      class="openButton"
-                    >
-                      <i class="fa fa-eye"></i>
-                    </a>
-                    <a
-                      href="https://github.com/ujjalacharya/home-stay"
-                      target="_blank"
-                      class="openLink"
-                    >
-                      <i class="fa fa-link"></i>
-                    </a>
-                  </div>
-
-                  <div class="overlay"></div>
-                </div>
-              </li>            
-              <li class="node col-lg-3 col-md-3 col-sm-4 col-xs-6 mt-5">
-                <div class="item">
-                  <img
-                    loading="lazy"
-                    src="./img/portfolio/thumbnails/goalnote.jpg"
-                    alt=""
-                  />
-
-                  <div class="icons">
-                    <a
-                      data-fancybox
-                      data-caption="GoalNote- Goal setting App"
-                      href="./img/portfolio/goalnote.JPG"
-                      title="GoalNote- Goal setting App"
-                      class="openButton"
-                    >
-                      <i class="fa fa-eye"></i>
-                    </a>
-                    <a
-                      href="http://goalnote.herokuapp.com/"
-                      target="_blank"
-                      class="openLink"
-                    >
-                      <i class="fa fa-link"></i>
-                    </a>
-                  </div>
-
-                  <div class="overlay"></div>
-                </div>
-              </li>
-              <li class="node col-lg-3 col-md-3 col-sm-4 col-xs-6 mt-5">
-                <div class="item">
-                  <img
-                    loading="lazy"
-                    src="./img/portfolio/thumbnails/nepchain.jpg"
-                    alt=""
-                  />
-
-                  <div class="icons">
-                    <a
-                      data-fancybox
-                      data-caption="Nepchain- Online portal for applying for citizenship"
-                      href="./img/portfolio/nepchain.JPG"
-                      title="Nepchain- Online portal for applying for citizenship"
-                      class="openButton"
-                    >
-                      <i class="fa fa-eye"></i>
-                    </a>
-                    <a
-                      href="https://github.com/ujjalacharya/nepchain"
-                      target="_blank"
-                      class="openLink"
-                    >
-                      <i class="fa fa-link"></i>
-                    </a>
-                  </div>
-
-                  <div class="overlay"></div>
-                </div>
-              </li>
-              <li class="node col-lg-3 col-md-3 col-sm-4 col-xs-6 mt-5">
-                <div class="item">
-                  <img
-                    loading="lazy"
-                    src="./img/portfolio/thumbnails/girlsInTech.png"
-                    alt=""
-                  />
-
-                  <div class="icons">
-                    <a
-                      data-fancybox
-                      data-caption="GirlsInTech- One day hackathon project"
-                      href="./img/portfolio/girlsintech.JPG"
-                      title="GirlsInTech- One day hackathon project"
-                      class="openButton"
-                    >
-                      <i class="fa fa-eye"></i>
-                    </a>
-                    <a
-                      href="https://github.com/ujjalacharya/girls-in-tech"
-                      target="_blank"
-                      class="openLink"
-                    >
-                      <i class="fa fa-link"></i>
-                    </a>
-                  </div>
-
-                  <div class="overlay"></div>
-                </div>
-              </li>
-              <li class="react col-lg-3 col-md-3 col-sm-4 col-xs-6 mt-5">
-                <div class="item">
-                  <img loading="lazy" src="./img/portfolio/thumbnails/game-shop.jpg" alt="" />
-
-                  <div class="icons">
-                    <a
-                      data-fancybox
-                      data-caption="Game Shop"
-                      href="./img/portfolio/game-shop.JPG"
-                      title="Game Shop"
-                      class="openButton"
-                    >
-                      <i class="fa fa-eye"></i>
-                    </a>
-                    <a
-                      href="https://game-shop.netlify.com/"
-                      target="_blank"
-                      class="openLink"
-                    >
-                      <i class="fa fa-link"></i>
-                    </a>
-                  </div>
-
-                  <div class="overlay"></div>
-                </div>
-              </li>
-              <li class="react col-lg-3 col-md-3 col-sm-4 col-xs-6 mt-5">
-                <div class="item">
-                  <img loading="lazy" src="./img/portfolio/thumbnails/recipefinder.png" alt="" />
-
-                  <div class="icons">
-                    <a
-                      data-fancybox
-                      data-caption="Recipe Findr"
-                      href="./img/portfolio/recipeFindr.JPG"
-                      title="Recipe Findr"
-                      class="openButton"
-                    >
-                      <i class="fa fa-eye"></i>
-                    </a>
-                    <a
-                      href="https://recipefindr.netlify.com/"
-                      target="_blank"
-                      class="openLink"
-                    >
-                      <i class="fa fa-link"></i>
-                    </a>
-                  </div>
-
-                  <div class="overlay"></div>
-                </div>
-              </li>
-
-              <li class="react-native col-lg-3 col-md-3 col-sm-4 col-xs-6 mt-5">
-                <div class="item">
-                  <img loading="lazy" src="./img/portfolio/thumbnails/BBD.png" alt="" />
-
-                  <div class="icons">
-                    <a
-                      data-fancybox
-                      data-caption="BBD NEPAL- Informative App"
-                      href="./img/portfolio/BBD.png"
-                      title="BBD NEPAL- Informative App"
-                      class="openButton"
-                    >
-                      <i class="fa fa-eye"></i>
-                    </a>
-                    <a
-                      href="https://play.google.com/store/apps/details?id=com.ujjal.bbdnepalv3&hl=en"
-                      target="_blank"
-                      class="openLink"
-                    >
-                      <i class="fa fa-link"></i>
-                    </a>
-                  </div>
-
-                  <div class="overlay"></div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="copyright">
-      <div class="row">
-        <div class="col-md-12 text-center name">
-          <p>&copy; Ujjal Acharya 2019</p>
-          <a target="_blank" href="https://www.github.com/ujjalacharya"
-            ><i class="fab fa-github-alt"></i
-          ></a>
-        </div>
-      </div>
-    </section>
-
-    <script src="./js/jquery.superslides.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-
-    <script src="./js/easypiechart.min.js"></script>
-
-    <script src="./js/script.js"></script>
+    </div>
   </body>
 </html>
